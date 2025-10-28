@@ -35,13 +35,15 @@ nav a {
 }
 
 main {
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .sobre {
     background-color: #003B73;
     color: #fff;
     padding: 40px 20px;
+    padding-top: 100px;
+
 }
 
 .capa {
@@ -59,6 +61,8 @@ main {
     margin: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    cursor: pointer;
+
 }
 
 .cards {
@@ -98,8 +102,9 @@ main {
 
 
 .creditos {
-    background-color: #fff;
+    background-color: #e5f0ff;
     padding: 40px 20px;
+
 }
 
 footer {
