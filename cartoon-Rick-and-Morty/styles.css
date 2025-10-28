@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background-color: #003B73;
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+main {
+    padding-top: 80px;
+}
+
+.sobre {
+    background-color: #003B73;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.capa {
+    background-color: #e5f0ff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.controles {
+    margin-top: 20px;
+}
+
+.controles input, .controles select, .controles button {
+    padding: 8px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.cards {
+    padding: 40px 20px;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #003B73;
+}
+
+.card p {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+
+.creditos {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #003B73;
+    color: #fff;
+}
+
+.mensagem {
+    text-align: center;
+    color: #555;
+    margin-top: 10px;
+}
+
+.erro {
+    color: red;
+}
