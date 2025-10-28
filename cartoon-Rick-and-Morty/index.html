@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartoons Archive - Rick and Morty</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Cartoons Archive</h1>
+        <nav>
+            <a href="#personagens">Personagens</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#creditos">Créditos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="sobre">
+            <h2>Sobre o Projeto</h2>
+            <p>Este projeto foi desenvolvido para fins acadêmicos, utilizando apenas HTML, CSS e JavaScript puro. O objetivo é demonstrar o consumo de uma API pública e a criação dinâmica de elementos no DOM.</p>
+        </section>
+
+        <section class="capa">
+            <h2>Rick and Morty - Catálogo de Personagens</h2>
+            <p>Os personagens dessa série icônica utilizando consumo de API com JavaScript.</p>
+            <div class="controles">
+                <input type="text" id="busca" placeholder="Buscar personagem...">
+                <select id="filtroStatus">
+                    <option value="">Todos</option>
+                    <option value="alive">Vivo</option>
+                    <option value="dead">Morto</option>
+                    <option value="unknown">Desconhecido</option>
+                </select>
+                <button id="carregarMais">Carregar Mais</button>
+            </div>
+        </section>
+
+        <section id="personagens" class="cards">
+            <h2>Personagens</h2>
+            <div id="listaCards" class="grade"></div>
+            <p id="carregando" class="mensagem">Carregando...</p>
+            <p id="erro" class="mensagem erro"></p>
+        </section>
+
+        
+    </main>
     
 </body>
 </html>
