@@ -1,3 +1,5 @@
+/* Reset básico e configuração de box-sizing para facilitar o controle de espaçamentos.
+   Também remove margin/padding padrão e define a fonte base do projeto. */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,11 +7,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Estilos globais do <body>: cor de fundo leve e cor de texto padrão. */
 body {
     background-color: #f4f4f4;
     color: #222;
 }
 
+/* Cabeçalho fixo no topo: cor de fundo, texto branco, padding e layout flex para alinhamento.
+   z-index garante que o header fique acima de outros elementos. */
 header {
     background-color: #003B73;
     color: #fff;
@@ -23,10 +28,12 @@ header {
     z-index: 1000;
 }
 
+/* Estilo do título dentro do header (ajuste do tamanho da fonte). */
 header h1 {
     font-size: 20px;
 }
 
+/* Links de navegação no header: cor branca, sem sublinhado, espaçamento e peso de fonte. */
 nav a {
     color: #fff;
     text-decoration: none;
@@ -34,41 +41,48 @@ nav a {
     font-weight: bold;
 }
 
+/* Espaçamento superior do main para compensar o header fixo (evita sobreposição). */
 main {
     padding-top: 100px;
 }
 
+/* Seção de capa: fundo suave, padding e centralização do texto. */
 .capa {
     background-color: #e5f0ff;
     padding: 40px 20px;
     text-align: center;
 }
 
+/* Seção "sobre": fundo escuro (azul), texto branco e padding para separar visualmente. */
 .sobre {
     background-color: #003B73;
     color: #fff;
     padding: 40px 20px;
     padding-top: 40px;
-
 }
 
+/* Controles (busca, select, botão): margem superior para separar da capa. */
 .controles {
     margin-top: 20px;
 }
 
+/* Estilos base para os inputs, select e botão dos controles:
+   padding para conforto, margem entre elementos, borda arredondada e cursor indicando ação. */
 .controles input, .controles select, .controles button {
     padding: 8px 10px;
     margin: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
     cursor: pointer;
-
 }
 
+/* Seção que contém os cards: padding para espaçamento vertical. */
 .cards {
     padding: 40px 20px;
 }
 
+/* Grade responsiva usando CSS Grid:
+   auto-fit + minmax permite que as colunas se adaptem ao tamanho da tela. */
 .grade {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -76,6 +90,7 @@ main {
     margin-top: 20px;
 }
 
+/* Estilo base do card: fundo branco, borda arredondada, sombra suave e centralização do conteúdo. */
 .card {
     background-color: #fff;
     border-radius: 10px;
@@ -84,29 +99,32 @@ main {
     text-align: center;
 }
 
+/* Imagem do card: ocupa toda a largura, altura fixa e mantém proporção com object-fit. */
 .card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
+/* Título do card: margem para separar do conteúdo e cor que combina com a identidade visual. */
 .card h3 {
     margin: 10px 0;
     color: #003B73;
 }
 
+/* Parágrafos dentro do card: tamanho de fonte confortável e padding inferior para espaçamento. */
 .card p {
     font-size: 14px;
     padding-bottom: 10px;
 }
 
-
+/* Seção de créditos: mesma aparência da capa para manter consistência visual. */
 .creditos {
     background-color: #e5f0ff;
     padding: 40px 20px;
-
 }
 
+/* Rodapé: centralizado, padding e mesmo esquema de cor do header para coerência. */
 footer {
     text-align: center;
     padding: 15px;
@@ -114,12 +132,14 @@ footer {
     color: #fff;
 }
 
+/* Mensagens de status (carregando / vazio): centralizadas e com cor sutil. */
 .mensagem {
     text-align: center;
     color: #555;
     margin-top: 10px;
 }
 
+/* Estilo específico para mensagens de erro (cor vermelha para destaque). */
 .erro {
     color: red;
 }

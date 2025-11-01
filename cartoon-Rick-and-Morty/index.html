@@ -1,14 +1,27 @@
 <!DOCTYPE html>
+<!-- Declara que este documento usa HTML5 -->
 <html lang="pt-BR">
 <head>
+    <!-- Define codificação de caracteres para acentuação -->
     <meta charset="UTF-8">
+
+    <!-- Faz o site se ajustar bem em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título exibido na aba do navegador -->
     <title>Rick and Morty</title>
+
+    <!-- Importação do arquivo de estilos CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Cabeçalho fixo no topo com links de navegação -->
     <header>
+        <!-- Título principal do site -->
         <h1>Cartoons Archive - Rick and Morty</h1>
+
+        <!-- Navegação interna usando âncoras para rolar entre seções -->
         <nav>
             <a href="#personagens">Personagens</a>
             <a href="#sobre">Sobre</a>
@@ -16,47 +29,84 @@
         </nav>
     </header>
 
+    <!-- Conteúdo principal do site -->
     <main>
+
+        <!-- Seção de capa (introdução) com busca e filtros -->
         <section class="capa">
             <h2>Rick and Morty - Catálogo de Personagens</h2>
             <p>Os personagens dessa série icônica utilizando consumo de API com JavaScript.</p>
+
+            <!-- Controles do usuário: busca, filtro de status e botão para carregar mais -->
             <div class="controles">
+
+                <!-- Campo de busca por nome -->
                 <input type="text" id="busca" placeholder="Buscar personagem...">
+
+                <!-- Filtro dropdown para escolher status do personagem -->
                 <select id="filtroStatus">
                     <option value="">Todos</option>
                     <option value="alive">Vivo</option>
                     <option value="dead">Morto</option>
                     <option value="unknown">Desconhecido</option>
                 </select>
+
+                <!-- Botão que dispara a próxima página da API -->
                 <button id="carregarMais">Carregar Mais</button>
             </div>
         </section>
 
+        <!-- Seção onde os cards serão carregados dinamicamente -->
         <section id="personagens" class="cards">
             <h2>Personagens</h2>
+
+            <!-- Container onde os cards são inseridos via JavaScript -->
             <div id="listaCards" class="grade"></div>
+
+            <!-- Mensagem de carregamento (é ocultada pelo JS depois do fetch) -->
             <p id="carregando" class="mensagem">Carregando...</p>
+
+            <!-- Mensagem de erro (exibida caso a API falhe) -->
             <p id="erro" class="mensagem erro"></p>
         </section>
 
+        <!-- Seção informativa explicando o objetivo do projeto -->
         <section id="sobre" class="sobre">
             <h2>Sobre o Projeto</h2>
-            <p>Este projeto foi desenvolvido para fins acadêmicos, utilizando apenas HTML, CSS e JavaScript puro. O objetivo é demonstrar o consumo de uma API pública e a criação dinâmica de elementos no DOM.</p>
+
+            <!-- Texto descritivo do trabalho -->
+            <p>
+                Este projeto foi desenvolvido para fins acadêmicos, utilizando apenas HTML, CSS e 
+                JavaScript puro. O objetivo é demonstrar o consumo de uma API pública e a criação 
+                dinâmica de elementos no DOM.
+            </p>
         </section>
 
+        <!-- Créditos, fontes e documentação útil -->
         <section id="creditos" class="creditos">
             <h2>Créditos e documentação</h2><br>
-            <p>Fetch API — MDN <br>
-Document.createElement, Node.appendChild — MDN <br>
-API Rick and Morty — rickandmortyapi.com</p><br>
-            <p>Desenvolvido por <strong>Jackson Sousa</strong> — Trabalho de Desenvolvimento Web Front-End.</p>
+
+            <!-- Lista simples das fontes consultadas -->
+            <p>
+                Fetch API — MDN <br>
+                Document.createElement, Node.appendChild — MDN <br>
+                API Rick and Morty — rickandmortyapi.com
+            </p><br>
+
+            <!-- Identificação do autor -->
+            <p>
+                Desenvolvido por <strong>Jackson Sousa</strong> — Trabalho de Desenvolvimento Web Front-End.
+            </p>
         </section>
+
     </main>
 
+    <!-- Rodapé do site -->
     <footer>
         <p>&copy; 2025 - Cartoons Archive | Projeto Acadêmico UniFECAF</p>
     </footer>
 
+    <!-- Importação do JavaScript responsável por consumir a API e criar os cards -->
     <script src="app.js"></script>
     
 </body>
