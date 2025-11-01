@@ -38,18 +38,18 @@ main {
     padding-top: 100px;
 }
 
-.sobre {
-    background-color: #003B73;
-    color: #fff;
-    padding: 40px 20px;
-    padding-top: 100px;
-
-}
-
 .capa {
     background-color: #e5f0ff;
     padding: 40px 20px;
     text-align: center;
+}
+
+.sobre {
+    background-color: #003B73;
+    color: #fff;
+    padding: 40px 20px;
+    padding-top: 40px;
+
 }
 
 .controles {
